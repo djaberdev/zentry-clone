@@ -22,7 +22,8 @@
 
 <!-- Project Type -->
 <p align="center">
-  
+  <img src="https://img.shields.io/badge/Type-Gaming%20Landing%20Page-771afe?style=for-the-badge" alt="Project Type" />
+</p>
 </p>
 
 <br />
