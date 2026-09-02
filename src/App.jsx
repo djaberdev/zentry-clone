@@ -4,7 +4,8 @@ import {
     Features,
     Vault,
     WhoAreWe,
-    Latest
+    Latest,
+    Contact
 } from "./sections";
 
 const App = () => {
@@ -25,6 +26,8 @@ const App = () => {
             <WhoAreWe />
             
             <Latest />
+
+            <Contact />
 
         </main>
     );

@@ -81,3 +81,16 @@ export const vaultTexts = [
         body: "ZENT holders thrive as Zentry grows, benefiting from the expansive partnerships, treasury investment and economic activities."
     },
 ] 
+
+export const lastestUpdates = [
+    {
+        img: "/images/gallery-2.webp",
+        date: "09.05.2024",
+        title: "Welcome NEXUS: Zentry Social Gateway"
+    },
+    {
+        img: "/images/gallery-3.webp",
+        date: "23.04.2024",
+        title: "Introducing Zentry: The Metagame Layer"
+    },
+]

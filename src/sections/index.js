@@ -5,6 +5,7 @@ import Features from "./Features";
 import Vault from "./Vault";
 import WhoAreWe from "./WhoAreWe";
 import Latest from "./Latest";
+import Contact from "./Contact";
 
 export {
     Navbar,
@@ -13,5 +14,6 @@ export {
     Features,
     Vault,
     WhoAreWe,
-    Latest
+    Latest,
+    Contact
 };
