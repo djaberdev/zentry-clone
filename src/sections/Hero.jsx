@@ -124,7 +124,7 @@ const Hero = () => {
             <div ref={heroVideoAreaRef} className="absolute h-full w-full z-1 flex-center-all">
                 {/* The screen playing video */}
                 <div ref={heroVideosHolderRef} className="absolute inset-0 w-full h-full flex-center-all bg-black">
-                    {/* {heroVideos.map((heroVideo, i) => (
+                    {heroVideos.map((heroVideo, i) => (
                         <video 
                             key={i}
                             src={getHeroVideo(i + 1)}
@@ -135,7 +135,7 @@ const Hero = () => {
                             className={`hero-video ${heroVideo.className} absolute w-full h-full object-cover`}
                             style={{ zIndex: heroVideo.zIndex }}
                         ></video>
-                    ))} */}
+                    ))}
                 </div>
 
                 {/* The clickable switcher */}
@@ -144,7 +144,7 @@ const Hero = () => {
                     className="relative w-[200px] h-[200px] rounded-lg border-1 z-5 switcher-transition overflow-hidden border-neutral-950/0 opacity-95 hover:opacity-100 scale-80! hover:scale-102! sm:hover:scale-122! hover:border-neutral-950/60 cursor-pointer"
                     onClick={() => switchVideo()}
                 >
-                    {/* {heroSwitcherVideos.map((heroSwitcherVideo, i) => (
+                    {heroSwitcherVideos.map((heroSwitcherVideo, i) => (
                         <video 
                             key={i}
                             src={getHeroVideo(i === 3 ? 1 : i + 2)}
@@ -154,7 +154,7 @@ const Hero = () => {
                             className={`switcher-video ${heroSwitcherVideo.className} absolute w-full h-full object-cover`} 
                             style={{ zIndex: heroSwitcherVideo.zIndex }}
                         ></video>
-                    ))} */}
+                    ))}
                 </div>
 
                 {/* The Centent */}
