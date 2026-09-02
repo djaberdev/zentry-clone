@@ -87,13 +87,13 @@ const Features = () => {
 
                     <BadgePlayable color={"#d09ba8"} />
 
-                    <video 
+                    {/* <video 
                         src="/videos/feature-1.mp4"
                         muted
                         autoPlay
                         loop
                         className="absolute -top-1/12 -right-1/12 h-[calc(100%_+_60px)] z-0"
-                    ></video>
+                    ></video> */}
                 </div>
 
                 {/* Bento Grid */}
@@ -122,13 +122,13 @@ const Features = () => {
 
                             <BadgePlayable color={"#661bb7"} />
 
-                            <video 
+                            {/* <video 
                                 src="/videos/feature-2.mp4"
                                 muted
                                 autoPlay
                                 loop
                                 className="absolute top-1/2 left-1/2 -translate-1/2 h-full sm:h-[calc(100%_+_170px)] md:h-[calc(100%_+_60px)] z-0"
-                            ></video> 
+                            ></video>  */}
                         </div>
                         
                         {/* The Side Ones */}
@@ -167,13 +167,13 @@ const Features = () => {
                                     </div>
                                 </div>
 
-                                <video 
+                                {/* <video 
                                     src="/videos/feature-3.mp4"
                                     muted
                                     autoPlay
                                     loop
                                     className="absolute top-[-12%] right-[-22%] w-full h-[calc(100%_+_80px)] z-0"
-                                ></video>
+                                ></video> */}
                             </div>
 
                             <div className="relative w-full h-1/2 rounded-xl ring-[1.5px] ring-neutral-600/60 p-6 overflow-hidden">
@@ -197,13 +197,13 @@ const Features = () => {
 
                                 <div className="absolute top-[-22%] right-[-22%] w-full h-[calc(100%_+_200px)] z-0">
                                     <div className="absolute left-10 bottom-0 h-full w-[60px] blur-[6px] bg-gradient-to-r from-black to-black/80"></div>
-                                    <video 
+                                    {/* <video 
                                         src="/videos/feature-4.mp4"
                                         muted
                                         autoPlay
                                         loop
                                         className="w-full h-full"
-                                    ></video>
+                                    ></video> */}
                                 </div>
                             </div>
                         </div>
@@ -231,13 +231,13 @@ const Features = () => {
                         </div>
 
                         <div className="relative w-full md:w-1/2 h-[360px] flex-center-all rounded-xl ring-[1.5px] ring-neutral-600/60 overflow-hidden">
-                            <video 
+                            {/* <video 
                                 src="/videos/hero-3.mp4"
                                 muted
                                 autoPlay
                                 loop
                                 className="h-[calc(100%_+_100px)]"
-                            ></video>
+                            ></video> */}
                         </div>
                     </div>
 

@@ -65,15 +65,7 @@ const Vault = () => {
             );
             
             // SVG Animation
-            TL2.fromTo(".svg-2 #top-right", { opacity: 1 }, { opacity: 0, duration: 1 }, 0);
-            TL2.fromTo(".svg-2 #top-left", { opacity: 1 }, { opacity: 0, duration: 1 }, 0);
-            
-            TL2.to(".svg-2 #center", { rotateZ: "50deg", duration: TL2.duration() }, 0);
-            TL2.to(".svg-2 #middle-right", { x: -49, y: -0.5, rotateZ: "50deg", duration: TL2.duration() }, 0);
-            TL2.to(".svg-2 #middle-left", { x: 49, y: 0.5, rotateZ: "50deg", duration: TL2.duration() }, 0);
-
-            TL2.fromTo(".svg-2 #bottom-right", { opacity: 1 }, { opacity: 0, duration: 1 }, 0);
-            TL2.fromTo(".svg-2 #bottom-left", { opacity: 1 }, { opacity: 0, duration: 1 }, 0);
+            TL2.fromTo(".svg-2", { rotate: 0 }, { rotate: 240, duration: TL2.duration() }, 0);
 
             TL2.fromTo(".svg-2", { opacity: 1 }, { opacity: 0 }, "-=1");
             TL2.fromTo(".svg-3", { opacity: 0 }, { opacity: 1 });
@@ -141,7 +133,8 @@ const Vault = () => {
                 </div>
 
                 {/* The Section Footer - Animation Place */}
-                <div ref={animationSectionRef} className="w-full h-screen flex-end-between pb-26!">
+                <div ref={animationSectionRef} className="w-full h-screen flex-end-between max-md:flex-col-reverse max-md:justify-center max-md:items-center max-md:gap-15 pb-26!">
+
                     <div className="w-[440px] flex-col-start gap-8">
                         {vaultTexts.map((obj) => (
                             <div className={clsx(`flex-col-start info-box_${obj.id}`, obj.id === 1 ? "opacity-100 gap-4" : "opacity-50 gap-0")}>
@@ -185,14 +178,85 @@ const Vault = () => {
                             <path id="inside" d="M46.402 93.3381L92.364 47.3762L138.326 93.3381L92.364 139.3L46.402 93.3381Z" fill="black"/>
                         </svg>
 
-                        <svg className="svg-2 absolute" width="265" height="265" viewBox="0 0 210 210" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path id="bottom-left" d="M50.9428 210L45.7439 173.901L75.2283 167.535L80.4272 203.635L50.9428 210Z" fill="black"/>
-                            <path id="bottom-right" d="M164.257 173.901L159.058 210L129.574 203.635L134.773 167.535L164.257 173.901Z" fill="black"/>
-                            <path id="middle-right" d="M167.66 106.902L188.83 80.9823L210 106.902L188.83 132.822L167.66 106.902Z" fill="black"/>
-                            <path id="center" d="M83.8306 106.902L105.001 80.9823L126.171 106.902L105.001 132.822L83.8306 106.902Z" fill="black"/>
-                            <path id="middle-left" d="M0 106.902L21.1702 80.9823L42.3405 106.902L21.1702 132.822L0 106.902Z" fill="black"/>
-                            <path id="top-left" d="M42.6368 31.7452L57.6064 0L83.5346 18.3281L68.565 50.0733L42.6368 31.7452Z" fill="black"/>
-                            <path id="top-right" d="M152.394 1.85543e-06L167.364 31.7452L141.435 50.0733L126.466 18.3281L152.394 1.85543e-06Z" fill="black"/>
+                        <svg
+                            width={220}
+                            height={220}
+                            viewBox="0 0 186 186"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="svg-2 absolute"
+                        >
+                            <circle
+                                cx={93}
+                                cy={93}
+                                r={83}
+                                stroke="url(#paint0_radial_23_7)"
+                                strokeWidth={20}
+                            />
+                            <circle
+                                cx={93}
+                                cy={93}
+                                r={52}
+                                stroke="url(#paint1_radial_23_7)"
+                                strokeWidth={16}
+                            />
+                            <g
+                                clipPath="url(#paint2_angular_23_7_clip_path)"
+                                data-figma-skip-parse="true"
+                            >
+                                <g transform="matrix(0 0.031 -0.031 0 93 93)">
+                                    <foreignObject
+                                    x={-1032.26}
+                                    y={-1032.26}
+                                    width={2064.52}
+                                    height={2064.52}
+                                    >
+                                    <div
+                                        xmlns="http://www.w3.org/1999/xhtml"
+                                        style={{
+                                        background:
+                                            "conic-gradient(from 90deg,rgba(0, 0, 0, 1) 0deg,rgba(50, 50, 50, 1) 360deg)",
+                                        height: "100%",
+                                        width: "100%",
+                                        opacity: 1,
+                                        }}
+                                    />
+                                    </foreignObject>
+                                </g>
+                            </g>
+                            <circle
+                                cx={93}
+                                cy={93}
+                                r={31}
+                                data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_ANGULAR&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.0,&#34;g&#34;:0.0,&#34;b&#34;:0.0,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.33333334326744080,&#34;g&#34;:0.33333334326744080,&#34;b&#34;:0.33333334326744080,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;transform&#34;:{&#34;m00&#34;:3.7964050577255631e-15,&#34;m01&#34;:-62.0,&#34;m02&#34;:124.0,&#34;m10&#34;:62.0,&#34;m11&#34;:3.5527136788005009e-15,&#34;m12&#34;:62.0},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.0,&#34;g&#34;:0.0,&#34;b&#34;:0.0,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.33333334326744080,&#34;g&#34;:0.33333334326744080,&#34;b&#34;:0.33333334326744080,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;visible&#34;:true}"
+                            />
+                            <defs>
+                                <clipPath id="paint2_angular_23_7_clip_path">
+                                    <circle cx={93} cy={93} r={31} />
+                                </clipPath>
+                                <radialGradient
+                                    id="paint0_radial_23_7"
+                                    cx={0}
+                                    cy={0}
+                                    r={1}
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(93) rotate(90) scale(186)"
+                                >
+                                    <stop />
+                                    <stop offset={1} stopColor="#151515" />
+                                </radialGradient>
+                                <radialGradient
+                                    id="paint1_radial_23_7"
+                                    cx={0}
+                                    cy={0}
+                                    r={1}
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(93 153) rotate(-90) scale(120)"
+                                >
+                                    <stop />
+                                    <stop offset={1} stopColor="#151515" />
+                                </radialGradient>
+                            </defs>
                         </svg>
 
                         <svg className="svg-3 absolute" width="265" height="265" viewBox="0 0 201 201" fill="none" xmlns="http://www.w3.org/2000/svg">
