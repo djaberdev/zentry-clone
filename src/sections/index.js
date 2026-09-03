@@ -6,6 +6,7 @@ import Vault from "./Vault";
 import WhoAreWe from "./WhoAreWe";
 import Latest from "./Latest";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 export {
     Navbar,
@@ -15,5 +16,6 @@ export {
     Vault,
     WhoAreWe,
     Latest,
-    Contact
+    Contact,
+    Footer
 };

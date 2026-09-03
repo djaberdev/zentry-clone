@@ -1,4 +1,6 @@
-const ZentryLogo = ({ width, height, fill, fillClasses }) => (
+import clsx from "clsx";
+
+const ZentryLogo = ({ width, height, fill, fillClasses, classes }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -8,7 +10,7 @@ const ZentryLogo = ({ width, height, fill, fillClasses }) => (
         xmlSpace="preserve"
         width={width}
         height={height}
-        className="translate-y-2 -translate-x-[28px]"
+        className={clsx("translate-y-2 -translate-x-[28px]", classes)}
     >
         <path
             fill={fill}

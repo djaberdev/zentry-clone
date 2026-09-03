@@ -1,6 +1,6 @@
 import { Element } from "react-scroll";
 
-import { CursorGrid } from "../components";
+import { CursorGrid, ZentryImage } from "../components";
 
 const Contact = () => {
     return (
@@ -34,52 +34,35 @@ const Contact = () => {
                     */}
 
                         {/* Top One */}
-                        <img 
+                        <ZentryImage
                             src="/images/contact-1.webp" 
                             alt="Contact-01" 
-                            className="absolute -top-14 left-[14%] size-70 rounded-2xl object-cover max-lg:hidden" 
+                            polygon={"14% 3%, 85% 0, 83% 64%, 25% 76%"}
+                            classes={"absolute -top-14 left-[14%] size-76 rounded-2xl max-lg:hidden"}
                             style={{
-                                clipPath: "polygon(14% 3%, 85% 0, 83% 64%, 25% 76%)",
                                 transform: "rotateX(-20deg) rotate(-6deg)",
-                                filter: "url(#round-corners)",
                             }}
                         />
 
                         {/* Bottom One */}
-                        <img 
+                        <ZentryImage
                             src="/images/contact-2.webp" 
-                            alt="Contact-02" 
-                            className="absolute -bottom-20 left-1/10 size-86 rounded-2xl object-cover max-lg:hidden" 
+                            alt="Contact-02"  
+                            polygon={"19% 13%, 78% 30%, 88% 94%, 6% 87%"}
+                            classes={"absolute -bottom-20 left-1/10 size-86 rounded-2xl max-lg:hidden"}
                             style={{
-                                clipPath: "polygon(19% 13%, 78% 30%, 88% 94%, 6% 87%)",
                                 transform: "rotateX(26deg) rotate(6deg)",
-                                filter: "url(#round-corners)",
                             }}
                         />
 
                         {/* Swordman One */}
-                        <img 
+                        <ZentryImage 
                             src="/images/swordman.webp" 
-                            alt="Contact-02" 
-                            className="absolute top-1/2 -translate-y-1/2 right-0 size-90 rounded-2xl object-cover max-lg:hidden" 
-                            style={{
-                                clipPath: "polygon(2% 1%, 84% 9%, 74% 88%, 4% 100%)",
-                                filter: "url(#round-corners)",
-                            }}
+                            alt="Contact-03" 
+                            polygon={"2% 1%, 84% 9%, 74% 88%, 4% 100%"}
+                            classes={"absolute top-1/2 -translate-y-1/2 right-0 size-90 rounded-2xl max-lg:hidden"} 
                         />
-
-                        {/* For Clip-Path Rounded Corners */}
-                        <svg width="0" height="0">
-                            <filter id="round-corners">
-                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                                <feColorMatrix in="blur" mode="matrix" 
-                                values="1 0 0 0 0  
-                                        0 1 0 0 0  
-                                        0 0 1 0 0  
-                                        0 0 0 19 -9" result="goo" />
-                                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-                            </filter>
-                        </svg>
+                        
 
                 </div>
             </section>
