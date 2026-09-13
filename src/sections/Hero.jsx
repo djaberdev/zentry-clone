@@ -15,6 +15,10 @@ const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(1);
     const [switcherCurrentIndex, setSwitcherCurrentIndex] = useState(currentIndex + 1);
 
+    const [isSwitcherHovered, setIsSwitcherHovered] = useState(false);
+    const [switcherTilt, setSwitcherTilt] = useState({ x: 0, y: 0 });
+    const [switcherPosition, setSwitcherPosition] = useState({ x: 0, y: 0 });
+
     const heroVideoAreaRef = useRef(null);
     const heroVideosHolderRef = useRef(null);
     const videoSwitcherRef = useRef(null);
@@ -35,26 +39,42 @@ const Hero = () => {
 
     };
 
-    // The clickable switcher interact on mouse move
+    // The clickable switcher Follow Effect on mouse move
     useEffect(() => {
 
         heroVideoAreaRef.current.addEventListener("mousemove", (e) => {
             
             // Get the X / Y values
-            let moveX = (e.pageX / heroVideoAreaRef.current.clientWidth) * 60;
-            let moveY = (e.pageY / heroVideoAreaRef.current.clientHeight) * 60;
+            let moveX = (e.pageX / heroVideoAreaRef.current.clientWidth) * 80;
+            let moveY = (e.pageY / heroVideoAreaRef.current.clientHeight) * 80;
 
-            gsap.to(
-                videoSwitcherRef.current, 
-                {
-                    x: moveX,
-                    y: moveY,
-                }
-            )
+            // Update Values
+            setSwitcherPosition({
+                x: moveX,
+                y: moveY
+            })
 
         });
 
     }, []);
+
+    // Handle The Switcher's Tilt Effect
+    const handleSwitcherMove = (event) => {
+        const rect = event.currentTarget.getBoundingClientRect();
+        const x = (event.clientX - rect.left) / rect.width - 0.5;
+        const y = (event.clientY - rect.top) / rect.height - 0.5;
+
+        setIsSwitcherHovered(true);
+        setSwitcherTilt({
+            x: y * -26,
+            y: x * 26
+        });
+    };
+
+    const handleSwitcherLeave = () => {
+        setIsSwitcherHovered(false);
+        setSwitcherTilt({ x: 0, y: 0 });
+    };
 
     // What happen if we reach the end of the videos — Switcher version
     useEffect(() => {
@@ -141,8 +161,18 @@ const Hero = () => {
                 {/* The clickable switcher */}
                 <div 
                     ref={videoSwitcherRef}
-                    className="relative w-[200px] h-[200px] rounded-lg border-1 z-5 switcher-transition overflow-hidden border-neutral-950/0 opacity-95 hover:opacity-100 scale-80! hover:scale-102! sm:hover:scale-122! hover:border-neutral-950/60 cursor-pointer"
+                    className="relative w-[200px] h-[200px] rounded-lg border-1 z-5 overflow-hidden border-neutral-950/20 opacity-95 hover:opacity-100 hover:border-neutral-950/70 scale-84! hover:scale-102! sm:hover:scale-122! cursor-pointer"
+                    style={{
+                        transform: `perspective(1200px) rotateX(${switcherTilt.x}deg) rotateY(${switcherTilt.y}deg) translateX(${switcherPosition.x}px) translateY(${switcherPosition.y}px)`,
+                        transformStyle: "preserve-3d",
+                        transition: isSwitcherHovered ? "transform, scale 180ms ease-out" : "transform, scale 600ms ease-out"
+                    }}
+
                     onClick={() => switchVideo()}
+                    
+                    onMouseEnter={() => setIsSwitcherHovered(true)}
+                    onMouseLeave={handleSwitcherLeave}
+                    onMouseMove={handleSwitcherMove}
                 >
                     {/* {heroSwitcherVideos.map((heroSwitcherVideo, i) => (
                         <video 

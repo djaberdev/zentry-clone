@@ -194,6 +194,13 @@ const Footer = () => {
 
                 </div>
 
+                {/* Personal Touch */}
+                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 w-full flex-center-all">
+                    <p className="font-general uppercase text-[14px] font-medium text-black">
+                        <span className="opacity-75">Built By:</span> <a target="_blank" href="https://github.com/djaberdev" className="ml-0.5 opacity-80 hover:opacity-100 hover:tracking-wider hover:underline duration-300">Djaber.Dev</a>
+                    </p>
+                </div>
+
             </div>
 
         </footer>

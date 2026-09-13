@@ -11,9 +11,10 @@ import {
 
 const App = () => {
     return (
-        <main className="">
+        <main className="duration-700">
 
             <Hero />
+            
             <About />
 
             <section className="bg-black">

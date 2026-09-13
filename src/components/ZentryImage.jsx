@@ -97,6 +97,27 @@ function polygonToRoundedPath(polygon, radius = 0.03) {
 
     path += " Z";
 
+    let svg = `
+        <svg
+            style={{
+                position: "absolute",
+                width: 0,
+                height: 0,
+            }}
+        >
+            <defs>
+                <clipPath
+                    id="about-clipPath"
+                    clipPathUnits="objectBoundingBox"
+                >
+                    <path d=${path} />
+                </clipPath>
+            </defs>
+        </svg>
+    `;
+
+    console.log(svg);
+
     return path;
 }
 
@@ -107,7 +128,8 @@ const ZentryImage = ({
     polygon,
     radius = 0.03,
     style = {},
-    classes
+    classes,
+    ref
 }) => {
     const id = useId().replace(/:/g, "");
 
@@ -122,9 +144,9 @@ const ZentryImage = ({
         <>
             <svg
                 style={{
-                position: "absolute",
-                width: 0,
-                height: 0,
+                    position: "absolute",
+                    width: 0,
+                    height: 0,
                 }}
             >
                 <defs>
@@ -138,6 +160,7 @@ const ZentryImage = ({
             </svg>
 
             <img
+                ref={ref}
                 src={src}
                 alt={alt}
                 className={classes}
