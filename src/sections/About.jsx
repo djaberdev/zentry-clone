@@ -28,8 +28,6 @@ const About = () => {
 
                 start: "center+=260px center",
                 end: "+=775",
-                
-                markers: true,
 
                 scrub: 1.6,
 
@@ -128,7 +126,7 @@ const About = () => {
 
     return (
         <Element name="about">
-            <section ref={aboutSectionRef} className="relative h-[200vh] pt-26 pb-26 px-8 flex-col-center justify-between bg-neutral-500/40">
+            <section ref={aboutSectionRef} className="relative h-[200vh] pt-26 pb-26 px-8 flex-col-center justify-between">
                 <div className="flex-col-center gap-12">
                     <span className="font-general tracking-tight uppercase text-sm">Welcome To Zentry</span>
 
