@@ -24,14 +24,12 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Type-Gaming%20Landing%20Page-771afe?style=for-the-badge" alt="Project Type" />
 </p>
-</p>
 
-<br />
 <br />
 
 <!-- Project Overview & Desc.. -->
 ## 📝&nbsp; About **ZENTRY**
-⇨ ...
+⇨ Rebuild of an **Awwwards-Winner** Gaming `Landing Page` designed to present a dynamic Web3 and AI-driven ecosystem through: Premium & Clean Design, strong focus on Performance & UX futhermore Top-Level Animations & Seamless Micro-Interactions.
 
 ◈ `Feature` → ...
 
