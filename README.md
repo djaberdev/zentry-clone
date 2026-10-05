@@ -94,7 +94,11 @@
 
 ② `Master Complex GSAP Timelines Chaining` → This allows me to merge multiple animations together in one sequence.
 
-③ `Master High-Level Micro-Interactions` → This what can turn a static design into a live one; including: Mouse Following, 3D Tilt, ... 
+③ `Master High-Level Micro-Interactions` → This what can turn a static design into a live one; including: Mouse Following, 3D Transforms, ... 
+
+<br />
+
+[![🔗 Zentry — Awwwards Case Study](https://img.shields.io/badge/Zentry%20—%20Awwwards%20Case%20Study-771afe?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.awwwards.com/sites/zentry)
 
 ---
 
