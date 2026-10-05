@@ -90,13 +90,11 @@
 <!-- What Learn from that Project -->
 ## 🧠&nbsp; What I Learned 
 
-① `Thing` → ...
+① `Master Advanced Clip Path Effects` → Every unique effect in this amazing landing page is built ontop of **Complex Clip-Path Settings.**
 
-② `Thing` → ...
+② `Master Complex GSAP Timelines Chaining` → This allows me to merge multiple animations together in one sequence.
 
-③ `Thing` → ...
-
-④ `Thing` → ...
+③ `Master High-Level Micro-Interactions` → This what can turn a static design into a live one; including: Mouse Following, 3D Tilt, ... 
 
 ---
 
