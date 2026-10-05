@@ -98,7 +98,7 @@
 
 <br />
 
-[![🔗 Zentry — Awwwards Case Study](https://img.shields.io/badge/Zentry%20—%20Awwwards%20Case%20Study-771afe?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.awwwards.com/sites/zentry)
+[![🔗 Zentry — Awwwards Case Study](https://img.shields.io/badge/Zentry%20—%20Awwwards%20Case%20Study-9247fe?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.awwwards.com/sites/zentry)
 
 ---
 
