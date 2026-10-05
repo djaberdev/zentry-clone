@@ -31,11 +31,15 @@
 ## 📝&nbsp; About **ZENTRY**
 ⇨ Rebuild of an **Awwwards-Winner** Gaming `Landing Page` designed to present a dynamic Web3 and AI-driven ecosystem through: Premium & Clean Design, strong focus on Performance & UX futhermore Top-Level Animations & Seamless Micro-Interactions.
 
-◈ `Feature` → ...
+◈ `Fully Responsive` → Ensures flawless Responsiveness across all devices and screen sizes.
 
-◈ `Feature` → ...
+◈ `Optimized Performance` → Built for fast loading and an optimized user experience.
 
-◈ `Feature` → ...
+◈ `Engaging Micro-Interactions` → Enhance the page with stunning Effects: Mouse Follow, Card 3D Tilt, ...
+
+◈ `Top-Tier Scroll Animations` → This what make it an Awwwards-Winner! Clip-Path 3D Revealers, Pinned Content and Graphic-Based Complex Timelines.
+
+◈ `Advanced 3D Clip-Path` → Using a special method makes static images looks like 3D Transformed Planes.
 
 <br />
 
