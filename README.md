@@ -39,7 +39,7 @@
 
 ◈ `Top-Tier Scroll Animations` → This what make it an Awwwards-Winner! Clip-Path 3D Revealers, Pinned Content and Graphic-Based Complex Timelines.
 
-◈ `Advanced 3D Clip-Path` → Using a special method makes static images looks like 3D Transformed Planes.
+◈ `Advanced 3D Clip-Path` → Using special methods makes static images looks like 3D Transformed Planes.
 
 <br />
 
